@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Cryptocodes</title>
+
+        <!-- link rel="alternate" hreflang="en" href="https://www.todo.com/en/" /-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- style-->
+        <link rel="stylesheet" href="/style/style.css">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">Cryptocodes</div>
+            <p>The best deals on crypto</p>
+        </header>
+
+        <div class="content">
+            <div class="service cakedefi">
+                <img class="logo" src="img/logo-cakedefi.svg" alt="Cake DeFi">
+                <div class="adv">Get $30 + 11% extra deposit bonus worth of DFI Token</div>
+                <div class="link">Sign up here: <a href="https://cakedefi.com/?ref=390318">https://cakedefi.com/?ref=390318</a></div>
+                <div class="code">or use the referral code: <b>390318</b></div>
+                <p class="description">Cake DeFi offers the easiest-to-use and most transparent products and services offering high returns for both beginners and experienced investors.</p>
+            </div>
+        </div>
+
+        <div class="rocket">
+            <div class="main">🚀</div>
+            <div class="fumes">💨</div>
+        </div>
+
+        <script type="text/javascript">
+            function moveRocket() {
+                var rockets = document.getElementsByClassName('rocket');
+
+                for (var rocket of rockets) {
+                    rocket.style.left = Math.random() * 100 + '%';
+                }
+            }
+            setInterval(moveRocket, 10000);
+            moveRocket();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,218 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  color: #f5f5f5;
+  background: linear-gradient(-45deg, #222222, #222222, #3b3b3b, #444444);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 30s ease infinite;
+          animation: gradient 30s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  padding: 1rem;
+  padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .logo {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0 auto;
+}
+header p {
+  opacity: 0.8;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-size: 1.2em;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.content .logo {
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+.content .link {
+  display: block;
+}
+.content .link a {
+  color: white;
+  display: block;
+  padding: 0.8rem 0.2rem;
+  margin: 0.8rem 0;
+  font-size: 1.4rem;
+  text-align: center;
+  border: solid 4px #2F9C95;
+  background-color: rgba(47, 156, 149, 0.1);
+  -webkit-box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+  border-radius: 10rem;
+}
+.content .link a::before {
+  content: "";
+}
+.content .link a::after {
+  content: "";
+}
+.content .service {
+  background-color: #333333;
+  padding: 1rem;
+  max-width: 30rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 10px 0 #1118;
+          box-shadow: 0 0 10px 0 #1118;
+}
+
+.cakedefi {
+  background: #1e1e1e;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1e1e1e), to(#012179));
+  background: linear-gradient(180deg, #1e1e1e 50%, #012179 100%);
+}
+.cakedefi .link a {
+  border-color: #5B10FF;
+  background-color: rgba(91, 16, 255, 0.1);
+}
+
+.rocket {
+  width: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  position: absolute;
+  bottom: -3rem;
+  -webkit-animation: fly 10s ease-in infinite;
+          animation: fly 10s ease-in infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.rocket .main {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.rocket .fumes {
+  -webkit-transform: rotate(90deg) translateY(1px);
+          transform: rotate(90deg) translateY(1px);
+  margin-top: 0.2rem;
+  display: none;
+}
+
+@-webkit-keyframes fly {
+  0% {
+    bottom: -3rem;
+  }
+  33% {
+    bottom: 105%;
+  }
+  100% {
+    bottom: 120%;
+  }
+}
+
+@keyframes fly {
+  0% {
+    bottom: -3rem;
+  }
+  33% {
+    bottom: 105%;
+  }
+  100% {
+    bottom: 120%;
+  }
+}
+header .logo {
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  display: block;
+  color: #2F9C95;
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+header .logo::before {
+  content: "CRYPTOCODES";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(45deg, transparent 0, transparent 2px, #E8635D 2px, #E8635D 4px);
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+header .logo::after {
+  content: "CRYPTOCODES";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(135deg, transparent 0, transparent 2px, #46E8DD 2px, #46E8DD 4px);
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+header .logo:hover:before {
+  top: 10px;
+  left: 10px;
+}
+header .logo:hover:after {
+  top: -10px;
+  left: -10px;
+}
