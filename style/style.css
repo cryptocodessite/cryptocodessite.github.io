@@ -52,13 +52,13 @@ header {
           align-items: center;
 }
 header .logo {
-  font-size: 4rem;
+  font-size: 5vw;
   text-transform: uppercase;
   font-weight: 800;
   margin: 0 auto;
 }
 header p {
-  opacity: 0.8;
+  opacity: 0.9;
   padding: 0;
   margin: 0;
   font-style: italic;
@@ -112,13 +112,22 @@ header p {
   -webkit-box-shadow: 0 0 10px 0 #1118;
           box-shadow: 0 0 10px 0 #1118;
 }
+.content .service .description {
+  border-bottom: solid 4px rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  margin-bottom: 0;
+  border-radius: 1rem;
+  background-color: rgba(250, 250, 250, 0.2);
+}
 
 .cakedefi {
+  color: black;
   background: #1e1e1e;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1e1e1e), to(#012179));
-  background: linear-gradient(180deg, #1e1e1e 50%, #012179 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #dcdcfa), to(#9696fa));
+  background: linear-gradient(180deg, #dcdcfa 50%, #9696fa 100%);
 }
 .cakedefi .link a {
+  color: black;
   border-color: #5B10FF;
   background-color: rgba(91, 16, 255, 0.1);
 }
@@ -201,7 +210,7 @@ header .logo::after {
   content: "CRYPTOCODES";
   position: absolute;
   color: transparent;
-  background-image: repeating-linear-gradient(135deg, transparent 0, transparent 2px, #46E8DD 2px, #46E8DD 4px);
+  background-image: repeating-linear-gradient(135deg, transparent 0, transparent 2px, #76F8FD 2px, #76F8FD 4px);
   -webkit-background-clip: text;
   top: 0px;
   left: 0px;
