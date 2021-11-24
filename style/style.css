@@ -84,6 +84,7 @@ header p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 100%;
 }
 .content .logo {
   text-align: center;
