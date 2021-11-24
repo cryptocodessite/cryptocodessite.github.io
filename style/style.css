@@ -105,6 +105,7 @@ header p {
           box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
   border-radius: 10rem;
   word-break: break-all;
+  white-space: pre-line;
 }
 .content .link a::before {
   content: "";
