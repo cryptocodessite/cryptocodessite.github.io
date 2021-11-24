@@ -13,9 +13,14 @@ html, body {
     // background-color: $background;
     color: $light;
 
-    background: linear-gradient(-45deg, #222222, $background, #3b3b3b, #444444);
-    background-size: 400% 400%;
-    animation: gradient 30s ease infinite;
+    // background: linear-gradient(-45deg, #222222, $background, #3b3b3b, #444444);
+    // background-size: 400% 400%;
+    // animation: gradient 30s ease infinite;
+
+    background-color: #000000;
+    background-image:  linear-gradient(30deg, #1f1f1f 12%, transparent 12.5%, transparent 87%, #1f1f1f 87.5%, #1f1f1f), linear-gradient(150deg, #1f1f1f 12%, transparent 12.5%, transparent 87%, #1f1f1f 87.5%, #1f1f1f), linear-gradient(30deg, #1f1f1f 12%, transparent 12.5%, transparent 87%, #1f1f1f 87.5%, #1f1f1f), linear-gradient(150deg, #1f1f1f 12%, transparent 12.5%, transparent 87%, #1f1f1f 87.5%, #1f1f1f), linear-gradient(60deg, #1f1f1f77 25%, transparent 25.5%, transparent 75%, #1f1f1f77 75%, #1f1f1f77), linear-gradient(60deg, #1f1f1f77 25%, transparent 25.5%, transparent 75%, #1f1f1f77 75%, #1f1f1f77);
+    background-size: 74px 130px;
+    background-position: 0 0, 0 0, 37px 65px, 37px 65px, 0 0, 37px 65px;
 }
 
 @keyframes gradient {
@@ -64,10 +69,12 @@ header {
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     .logo {
-        margin-bottom: 0.4rem;
         text-align: center;
+        height: 2rem;
     }
 
     .link {
@@ -97,9 +104,14 @@ header {
     .service {
         background-color: $base;
         padding: 1rem;
+        margin-bottom: 2rem;
         max-width: 30rem;
         border-radius: $border-radius;
         box-shadow: 0 0 10px 0 #1118;
+
+        div {
+            margin: 1rem 0;
+        }
 
         .description {
             border-bottom: solid 4px rgba(0, 0, 0, 0.8);
@@ -121,6 +133,20 @@ header {
             color: black;
             border-color: #5B10FF;
             background-color: rgba(#5B10FF, 0.1);
+        }
+    }
+}
+
+.coinbase {
+    color: black;
+    background: rgb(30,30,30);
+    background: linear-gradient(180deg, rgba(220,220,250,1) 60%, rgba(#4082FF,1) 100%);
+
+    .link {
+        a {
+            color: black;
+            border-color: #0052FF;
+            background-color: rgba(#0052FF, 0.1);
         }
     }
 }
@@ -164,7 +190,7 @@ header {
     .logo {
       transform: translate(0%, 0%);
       display: block;
-      color: $highlight;
+      color: #aaaaaa;
       letter-spacing: 8px;
       cursor: pointer;
 
@@ -194,8 +220,8 @@ header {
           135deg,
           transparent 0,
           transparent 2px,
-          #76F8FD 2px,
-          #76F8FD 4px
+          #ffffff 2px,
+          #ffffff 4px
         );
         -webkit-background-clip: text;
         top: 0px;
@@ -213,4 +239,17 @@ header {
         left: -10px;
       }
     }
+}
+
+footer {
+    padding: 8rem 0;
+    background-color: rgba(#000, 0.6);
+    color: #777;
+    text-shadow: 0 0 4px #000;
+    font-weight: 800;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    box-shadow: inset 0 15px 10px -10px #000;
+    letter-spacing: 6px;
 }
